@@ -1,34 +1,42 @@
-# Contribution Guidelines
+# Contributing to Awesome Image-Based Profiling
 
-Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md).
-By participating in this project you agree to abide by its terms.
+We welcome contributions of new papers, software, and reviews!
 
-This contribution guidelines is modified from the [awesome list guidelines](https://github.com/sindresorhus/awesome/blob/efc69ed013896c466df6e3ec89f0753eb92edc02/contributing.md).
+## How to Add a Resource
 
-## Adding to the Cytodata Awesome list
+We use a Python script to automate metadata fetching and ensure data consistency.
 
-Note that the embedded links provide instructions for each step.
+### Prerequisites
 
-1. You will need a [GitHub Account!](https://github.com/join)
-2. Edit the [readme.md](readme.md) file to include your addition. Editing the readme can be performed several ways:
-  * Edit directly on GitHub
-  * [Fork](https://help.github.com/en/articles/fork-a-repo) or [clone](https://help.github.com/en/articles/cloning-a-repository-from-github) and edit using your favorite text editor
-3. File a [pull request](https://help.github.com/en/articles/about-pull-requests) to incorporate your changes.
+1. Python 3.10+
+2. Install dependencies:
+   ```bash
+   pip install requests
+   ```
 
-## Filing a Pull Request
+### Steps
 
-Ensure your pull request adheres to the following guidelines:
+1. **Fork** this repository.
+2. Open your terminal in the repository root.
+3. Run the management script:
+   ```bash
+   python scripts/manage_resources.py
+   ```
+4. Follow the prompts:
+   - Paste the **DOI** of the paper (e.g., `10.1038/nmeth.4397`).
+   - Select the appropriate **Category**.
+   - Write a short, high-quality **Summary**.
+5. The script will automatically update and sort `data/resources.json`.
+6. Commit your changes:
+   ```bash
+   git add data/resources.json
+   git commit -m "Add paper: [Paper Title]"
+   ```
+7. Open a **Pull Request**.
 
-* The resource is not already added.
-* The resource is placed in the proper section (e.g. software, publication, dataset).
-* The resource is added to the end of the list in the proper section.
-* The [markdown style](https://help.github.com/en/categories/writing-on-github) is consistent.
+## Categories
 
-Thank you for your suggestions!
-
-## Updating your PR
-
-A lot of times, making a PR adhere to the standards above can be difficult.
-If the maintainers notice anything that we'd like changed, we'll ask you to edit your PR before we merge it.
-There's no need to open a new PR, just edit the existing one.
-If you're not sure how to do that, [here is a guide](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) on the different ways you can update your PR so that we can merge it.
+- **Biology**: Papers focusing on biological discoveries made using profiling.
+- **Software**: Tools, libraries, and protocols (e.g., CellProfiler, PyCytominer).
+- **Reviews**: High-level overviews of the field.
+- **Influential Papers**: Foundational texts that defined the field.
