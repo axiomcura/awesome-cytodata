@@ -30,7 +30,7 @@ export const SoftwareTools: React.FC<SoftwareProps> = ({ tools }) => {
           >
             <div className="p-8 flex-1">
                 <div className="flex items-center justify-between mb-6">
-                    <div className="h-14 w-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:text-academic-500 group-hover:bg-academic-50 transition-all">
+                    <div className="h-14 w-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:text-academic-600 group-hover:bg-academic-50 transition-all">
                         <i className="fa-solid fa-code text-2xl"></i>
                     </div>
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-academic-50 text-academic-700 border border-academic-100">

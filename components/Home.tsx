@@ -109,7 +109,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             <div className="max-w-3xl">
               <h2 className="text-3xl sm:text-4xl font-black text-white mb-8 leading-tight">
                 Our goal: A unified hub for the <br/>
-                <span className="text-academic-500">profiling community</span>
+                <span className="text-academic-600">profiling community</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed mb-8">
                 Awesome CytoData was born from the need to centralize the rapidly expanding knowledge base of image-based profiling. We provide a structured overview of the field's progress, ensuring that researchers—from computational biologists to microscopy experts—have immediate access to the latest breakthroughs.

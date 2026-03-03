@@ -1,5 +1,6 @@
 
 import React from 'react';
+import logo from '../media/cytodata-logo.png';
 
 interface NavbarProps {
   currentView: string;
@@ -23,9 +24,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
             onClick={() => onNavigate('home')}
           >
             <img 
-              src="/logo.png" 
+              src={logo} 
               alt="CytoData Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-14 h-14 object-contain"
             />
             <span className="text-xl font-bold text-slate-800 tracking-tight hidden sm:block">
               Awesome <span className="text-academic-600">CytoData</span>

@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../media/cytodata-logo.png';
 
 export const About: React.FC = () => {
   return (
@@ -29,9 +30,8 @@ export const About: React.FC = () => {
              </div>
              <div className="w-full md:w-1/3 flex justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-academic-500 blur-3xl opacity-20 animate-pulse"></div>
                   <img 
-                      src="/logo.png" 
+                      src={logo} 
                       alt="CytoData Logo" 
                       className="w-56 h-56 object-contain relative z-10 drop-shadow-2xl"
                   />
