@@ -75,7 +75,7 @@ export const Datasets: React.FC<DatasetsProps> = ({ datasets }) => {
                       <td className="whitespace-normal py-8 pl-8 pr-4 text-lg font-black text-slate-900 align-top group-hover:text-academic-600 transition-colors">
                           {dataset.name}
                       </td>
-                      <td className="px-4 py-8 text-slate-600 align-top font-medium leading-relaxed">
+                      <td className="px-4 py-8 text-slate-600 align-top font-medium leading-relaxed break-words">
                           {dataset.description}
                       </td>
                       <td className="whitespace-nowrap px-4 py-8 text-sm align-top">

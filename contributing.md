@@ -7,11 +7,11 @@ We welcome contributions from the community! This project is a curated knowledge
 The easiest way to contribute is by adding or updating records in our data files. You don't need deep coding knowledge: just a basic understanding of JSON.
 
 ### 1. Add a Research Paper (Literature)
-Papers are stored in `data/resources.json`. 
+Papers are stored in `data/papers.json`. 
 
 **Steps:**
 1. Fork the repository.
-2. Open `data/resources.json`.
+2. Open `data/papers.json`.
 3. Add a new entry to the end of the array.
 4. **Author Formatting Rule:** Please use the format `Lastname, F. I.` (Family name followed by First initial and Middle initial). The website automatically appends "et al." for display.
 
@@ -66,6 +66,7 @@ Software tools are stored in `data/software.json`.
 ## Submission Guidelines
 
 - **DOI:** Always provide a DOI if available. It helps us link to the correct publisher page.
+- **Dataset metadata:** Where known, mention type, size, and dimensions as a short trailing sentence in the dataset `description` (e.g. "Type: ... Size: ... Dimensions: ...").
 - **Summary:** Keep the summary to 1-2 sentences. Focus on the *impact* or *utility* of the resource.
 - **Categories:** Use existing categories: `Biology`, `Reviews`, `Influential Papers`, `Applications`, `Methods`.
 - **Verification:** Ensure your JSON is valid (no trailing commas in the last element, all quotes are double quotes).

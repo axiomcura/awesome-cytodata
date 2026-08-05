@@ -64,7 +64,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             <div className="w-14 h-14 bg-academic-50 rounded-2xl flex items-center justify-center text-academic-600 mb-6 group-hover:scale-110 transition-transform">
               <i className="fa-solid fa-file-invoice text-2xl"></i>
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-3">Latest research</h3>
+            <h2 className="text-xl font-black text-slate-900 mb-3">Latest research</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               A curated feed of the most recent and influential publications in the field, from foundational methods to novel biological applications.
             </p>
@@ -77,7 +77,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             <div className="w-14 h-14 bg-academic-50 rounded-2xl flex items-center justify-center text-academic-600 mb-6 group-hover:scale-110 transition-transform">
               <i className="fa-solid fa-database text-2xl"></i>
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-3">Massive datasets</h3>
+            <h2 className="text-xl font-black text-slate-900 mb-3">Massive datasets</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               Direct access to high-content public datasets that serve as the benchmarks for morphological profiling and machine learning models.
             </p>
@@ -90,7 +90,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             <div className="w-14 h-14 bg-academic-50 rounded-2xl flex items-center justify-center text-academic-600 mb-6 group-hover:scale-110 transition-transform">
               <i className="fa-solid fa-code text-2xl"></i>
             </div>
-            <h3 className="text-xl font-black text-slate-900 mb-3">Open software</h3>
+            <h2 className="text-xl font-black text-slate-900 mb-3">Open software</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               The computational tools and pipelines used by the community to transform raw microscopy images into quantitative biological insights.
             </p>

@@ -52,9 +52,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
           </div>
 
           <div className="flex items-center gap-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
+            <a
+              href="https://github.com/cytodata/awesome-cytodata/"
+              target="_blank"
               rel="noreferrer"
               className="text-slate-500 hover:text-black transition-colors"
             >

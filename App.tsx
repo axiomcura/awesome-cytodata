@@ -16,7 +16,7 @@ const App: React.FC = () => {
   // Load data via fetch
   useEffect(() => {
     // Fetch Resources
-    fetch('data/resources.json')
+    fetch('data/papers.json')
       .then(res => res.ok ? res.json() : [])
       .then(data => setResources(data as Resource[]))
       .catch(e => console.error('Error loading resources', e));

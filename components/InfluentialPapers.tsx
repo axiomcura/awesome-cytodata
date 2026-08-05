@@ -23,6 +23,7 @@ export const InfluentialPapers: React.FC<InfluentialPapersProps> = ({ resources,
         </p>
       </div>
 
+      <h2 className="sr-only">Influential papers list</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {influentialResources.map(resource => (
           <ResourceCard key={resource.id} resource={resource} />

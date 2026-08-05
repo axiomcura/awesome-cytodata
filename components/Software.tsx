@@ -22,6 +22,7 @@ export const SoftwareTools: React.FC<SoftwareProps> = ({ tools }) => {
         </p>
       </div>
 
+      <h2 className="sr-only">Software tools list</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {tools.map((tool, idx) => (
           <div 
