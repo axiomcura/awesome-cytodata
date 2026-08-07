@@ -1,6 +1,5 @@
 
 export enum Category {
-  BIOLOGY = "Biology",
   REVIEWS = "Reviews",
   INFLUENTIAL = "Influential Papers",
   APPLICATIONS = "Applications",
