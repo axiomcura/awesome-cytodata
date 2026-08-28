@@ -28,8 +28,8 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode =
   }, [resource.authors]);
 
   const copyCitation = () => {
-    const citation = `${authorDisplay} (${year}). ${resource.title}. ${resource.journal}. DOI: ${resource.doi}`;
-    navigator.clipboard.writeText(citation);
+    const hasDoi = resource.doi && resource.doi.trim() !== '' && resource.doi.toUpperCase() !== 'N/A';
+    navigator.clipboard.writeText(hasDoi ? resource.doi : resource.title);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -104,11 +104,11 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode =
             >
               <i className="fa-solid fa-external-link text-xl"></i>
            </a>
-           <button 
+           <button
               onClick={copyCitation}
               className={`flex items-center justify-center h-12 w-12 rounded-xl transition-all hover:scale-110 ${copied ? 'text-green-600 bg-green-50' : 'text-slate-400 hover:text-academic-600 hover:bg-academic-50'}`}
-              title="Copy Citation"
-              aria-label="Copy citation to clipboard"
+              title="Copy DOI"
+              aria-label="Copy DOI to clipboard"
             >
               <i className={`fa-solid ${copied ? 'fa-check' : 'fa-copy'} text-xl`}></i>
            </button>
@@ -194,10 +194,10 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode =
             >
               {expanded ? 'Less' : 'Abstract'}
             </button>
-            <button 
+            <button
               onClick={copyCitation}
               className={`text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-xl transition-all shadow-sm ${copied ? 'text-green-600 bg-white' : 'text-slate-400 hover:text-academic-600 hover:bg-white'}`}
-              aria-label="Copy citation"
+              aria-label="Copy DOI"
             >
               {copied ? 'Copied' : 'Cite'}
             </button>
