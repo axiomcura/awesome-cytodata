@@ -20,5 +20,12 @@
     "doi": "10.1101/2022.08.12.503783",
     "description": "A software tool for learning feature representations from single cells in microscopy images using deep learning.",
     "tags": ["Feature Extraction", "Deep Learning"]
+  },
+  {
+    "name": "scmorph",
+    "url": "https://github.com/edbiomedai/scmorph",
+    "doi": "10.21105/joss.08324",
+    "description": "A Python package for analysing single-cell morphological profiles without averaging across cells, combining single-cell hit calling and batch correction with the scverse ecosystem for feature selection and dimensionality reduction.",
+    "tags": ["Single-Cell Analysis", "Batch Correction"]
   }
 ]

@@ -719,5 +719,29 @@
     "summary": "Experimental and computational workflow to extract 3D morphological descriptors of organoids using light-sheet microscopy.",
     "category": "Methods",
     "url": "https://doi.org/10.1038/s41592-022-01508-0"
+  },
+  {
+    "id": "10.21105/joss.08324",
+    "doi": "10.21105/joss.08324",
+    "title": "scmorph: a Python package for analysing single-cell morphological profiles",
+    "authors": ["Wagner, J.", "Warden, H.", "Khamseh, A.", "Beentjes, S.V."],
+    "journal": "Journal of Open Source Software",
+    "date_published": "2025-08-22",
+    "abstract": "scmorph is a Python package to analyse single-cell data from imaging data of cell populations, specifically morphological profiling experiments, which generate large tabular data. scmorph combines domain-specific methods such as single-cell hit calling and batch correction with the versatile and scalable scverse tools to offer feature selection, dimensionality reduction, and more. By skipping the averaging of profiles, scmorph retains the heterogeneity of cell populations, enabling hit calling that is sensitive to changes in subpopulations and recapitulation of dynamic processes such as differentiation.",
+    "summary": "A Python package for analysing single-cell morphological profiles without averaging across cells, integrating batch correction and single-cell hit calling with the scverse ecosystem.",
+    "category": "Methods",
+    "url": "https://doi.org/10.21105/joss.08324"
+  },
+  {
+    "id": "10.1038/s44320-026-00197-7",
+    "doi": "10.1038/s44320-026-00197-7",
+    "title": "Progress and new challenges in image-based profiling",
+    "authors": ["Serrano, E.", "Peters, J.", "Wagner, J.", "Graham, R.E.", "Chen, Z.", "Feng, B.Y.", "Miranda, G.", "Kalinin, A.A.", "Vulliard, L.", "Tomkinson, J.", "Mattson, C.", "Lippincott, M.J.", "Kang, Z.", "Sitani, D.", "Bunten, D.", "Seal, S.", "Carragher, N.O.", "Carpenter, A.E.", "Singh, S.", "Marin Zapata, P.A.", "Caicedo, J.C.", "Way, G.P."],
+    "journal": "Molecular Systems Biology",
+    "date_published": "2026-03-27",
+    "abstract": "For over two decades, image-based profiling has revolutionized cell phenotype analysis. Image-based profiling processes rich, high-throughput, microscopy data into thousands of unbiased measurements that reveal phenotypic patterns powerful for drug discovery, functional genomics, and cell state classification. Here, we review the evolving computational landscape of image-based profiling, detailing the bioinformatics processes involved from feature extraction to normalization and batch correction. We discuss how deep learning has fundamentally reshaped the field. We examine key methodological advancements, such as single-cell analysis, the development of robust similarity metrics, and the expansion into new modalities like optical pooled screening, temporal imaging, and 3D organoid profiling. We also highlight the growth of public benchmarks and open-source software ecosystems as a key driver for fostering reproducibility and collaboration. Despite these advances, the field still faces substantial challenges, particularly in developing methods for emerging temporal and 3D data modalities, establishing robust quality control standards and workflows, and interpreting the processed features.",
+    "summary": "A review of the evolving computational landscape of image-based profiling, from feature extraction and batch correction to deep learning, single-cell analysis, and emerging temporal and 3D data modalities, along with the field's remaining challenges.",
+    "category": "Reviews",
+    "url": "https://doi.org/10.1038/s44320-026-00197-7"
   }
 ]
