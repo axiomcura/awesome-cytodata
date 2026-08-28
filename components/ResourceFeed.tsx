@@ -112,7 +112,7 @@ export const ResourceFeed: React.FC<ResourceFeedProps> = ({ resources }) => {
             The CytoData <span className="text-academic-600">corpus</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl leading-relaxed font-medium">
-            Search through a hand-picked library of {resources.length} influential publications, software releases, and biological breakthroughs in morphological profiling.
+            Search through  publications, software releases, and biological breakthroughs in Image-based profiling.
           </p>
         </div>
 
