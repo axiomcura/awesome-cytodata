@@ -1,15 +1,10 @@
 import React from 'react';
-import { Resource, Category } from '../types';
-import { ResourceCard } from './ResourceCard';
 
 interface HomeProps {
   onNavigate: (view: string) => void;
-  resources: Resource[];
 }
 
-export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
-  const influentialResources = resources.filter(r => r.category === Category.INFLUENTIAL);
-
+export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   return (
     <div>
       {/* Hero Section with Conceptual Background */}
@@ -35,7 +30,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             through open research
           </h1>
           <p className="text-xl sm:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-            The central repository for the latest research, datasets, and software in morphological profiling. Empowering scientists to decode biological complexity at scale.
+            The central repository for the latest research, datasets, and software in morphological profiling. 
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
@@ -66,7 +61,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             </div>
             <h2 className="text-xl font-black text-slate-900 mb-3">Latest research</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              A curated feed of the most recent and influential publications in the field, from foundational methods to novel biological applications.
+              A curated feed of the most recent publications in the field, from foundational methods to novel biological applications.
             </p>
             <button onClick={() => onNavigate('resources')} className="text-academic-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
               Browse Papers <i className="fa-solid fa-arrow-right"></i>
@@ -79,7 +74,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             </div>
             <h2 className="text-xl font-black text-slate-900 mb-3">Massive datasets</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Direct access to high-content public datasets that serve as the benchmarks for morphological profiling and machine learning models.
+              Publicly available high-content public datasets that serve as the benchmarks for morphological profiling and machine learning models.
             </p>
             <button onClick={() => onNavigate('datasets')} className="text-academic-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
               Explore Data <i className="fa-solid fa-arrow-right"></i>
@@ -92,7 +87,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
             </div>
             <h2 className="text-xl font-black text-slate-900 mb-3">Open software</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              The computational tools and pipelines used by the community to transform raw microscopy images into quantitative biological insights.
+              Computational tools and pipelines used by the community to transform raw microscopy images into quantitative biological insights.
             </p>
             <button onClick={() => onNavigate('software')} className="text-academic-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
               View Tools <i className="fa-solid fa-arrow-right"></i>
@@ -112,53 +107,9 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, resources }) => {
                 <span className="text-academic-600">profiling community</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed mb-8">
-                Awesome CytoData was born from the need to centralize the rapidly expanding knowledge base of image-based profiling. We provide a structured overview of the field's progress, ensuring that researchers—from computational biologists to microscopy experts—have immediate access to the latest breakthroughs.
-              </p>
-              <div className="flex flex-wrap gap-10">
-                <div>
-                  <div className="text-4xl font-black text-white mb-1">200+</div>
-                  <div className="text-sm font-bold text-slate-500 uppercase tracking-widest">Research Papers</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-black text-white mb-1">50+</div>
-                  <div className="text-sm font-bold text-slate-500 uppercase tracking-widest">Software Tools</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-black text-white mb-1">10+</div>
-                  <div className="text-sm font-bold text-slate-500 uppercase tracking-widest">Public Datasets</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Influential Papers Section */}
-      <div className="bg-slate-50 border-t border-slate-200 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 text-academic-600 rounded-full text-xs font-black uppercase tracking-widest mb-4">
-                  <i className="fa-solid fa-star"></i>
-                  <span>Foundational work</span>
-              </div>
-              <h2 className="text-4xl font-black text-slate-900 mb-4">Scientific foundations</h2>
-              <p className="text-lg text-slate-600">
-                The seminal research papers that defined our understanding of morphological profiling and continue to guide the field today.
+                Awesome CytoData was developed to centralize the rapidly expanding knowledge base of image-based profiling. We provide a structured overview of the field's progress, ensuring that researchers, from computational biologists to microscopy experts, have immediate access to the latest breakthroughs.
               </p>
             </div>
-            <button 
-              onClick={() => onNavigate('resources')}
-              className="px-8 py-4 bg-white text-academic-600 border-2 border-academic-100 rounded-2xl font-black hover:bg-academic-50 transition-all flex items-center gap-2"
-            >
-              Browse Full Corpus <i className="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {influentialResources.map(resource => (
-              <ResourceCard key={resource.id} resource={resource} />
-            ))}
           </div>
         </div>
       </div>

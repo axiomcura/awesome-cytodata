@@ -30,7 +30,7 @@ export const Datasets: React.FC<DatasetsProps> = ({ datasets }) => {
           Publicly available <span className="text-academic-600">datasets</span>
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-slate-600 font-medium leading-relaxed">
-          A curated list of high-content screening and image-based profiling datasets available for research and benchmarking. The lifeblood of morphological discovery.
+          A curated list of high-content screening and image-based profiling datasets available for research and benchmarking.
         </p>
 
         {/* Search Input */}
@@ -41,7 +41,7 @@ export const Datasets: React.FC<DatasetsProps> = ({ datasets }) => {
            <input
               type="text"
               className="block w-full pl-14 pr-6 py-5 border-2 border-slate-100 rounded-[2rem] leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-academic-100 focus:border-academic-500 shadow-xl shadow-slate-100 transition-all font-bold text-slate-900"
-              placeholder="Search datasets (e.g., 'segmentation', 'COVID', 'cell painting')..."
+              placeholder="Search datasets (e.g., segmentation, COVID, cell painting')..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               aria-label="Search datasets"
@@ -87,7 +87,7 @@ export const Datasets: React.FC<DatasetsProps> = ({ datasets }) => {
                               aria-label={`View data for ${dataset.name}`}
                           >
                               <i className="fa-solid fa-database mr-2"></i>
-                              View Data
+                              Go to data
                           </a>
                       </td>
                       <td className="whitespace-nowrap px-8 py-8 text-sm text-slate-500 align-top">

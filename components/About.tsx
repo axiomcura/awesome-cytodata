@@ -22,10 +22,10 @@ export const About: React.FC = () => {
              <div className="flex-1">
                 <h2 className="text-3xl font-black text-slate-900 mb-6">Our perspective</h2>
                 <p className="text-slate-600 mb-6 leading-relaxed text-lg">
-                  We are a community-based collective of scientists dedicated to studying the evolving field of image-based profiling. We believe that progress in science is driven by shared standards, open dialogue, and a rigorous examination of the visual patterns of life.
+                  We are a community-based collective of scientists dedicated to tracking the evolving field of image-based profiling. We believe that progress in science is driven by shared standards, open dialogue, and a rigorous examination of the visual patterns of life.
                 </p>
                 <p className="text-slate-600 leading-relaxed text-lg">
-                  Our objective is to serve as a decentralized hub for knowledge exchange. By studying the state-of-the-art across diverse labs and institutions, we help identify the most robust scientific methods for extracting and analyzing morphological features, ensuring the field moves forward in a transparent and collaborative manner.
+                  Our objective is to serve as a central hub for knowledge exchange. We find the latest state-of-the-art methods across diverse labs and institutions and present them to the community, giving researchers a single place to see what is happening in the field.
                 </p>
              </div>
              <div className="w-full md:w-1/3 flex justify-center">

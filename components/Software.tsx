@@ -43,14 +43,6 @@ export const SoftwareTools: React.FC<SoftwareProps> = ({ tools }) => {
                     {tool.name}
                 </h3>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {tool.tags && tool.tags.map((tag, tIdx) => (
-                    <span key={tIdx} className="inline-flex items-center px-2.5 py-1 rounded-lg text-[10px] font-bold bg-slate-50 text-slate-500 border border-slate-100">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                
                 <p className="text-slate-600 leading-relaxed mb-6 font-medium">
                     {tool.description}
                 </p>

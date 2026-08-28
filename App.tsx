@@ -37,7 +37,7 @@ const App: React.FC = () => {
   const renderView = () => {
     switch (currentView) {
       case 'home':
-        return <Home onNavigate={setCurrentView} resources={resources} />;
+        return <Home onNavigate={setCurrentView} />;
       case 'resources':
         return <ResourceFeed resources={resources} />;
       case 'datasets':
@@ -47,7 +47,7 @@ const App: React.FC = () => {
       case 'about':
         return <About />;
       default:
-        return <Home onNavigate={setCurrentView} resources={resources} />;
+        return <Home onNavigate={setCurrentView} />;
     }
   };
 
